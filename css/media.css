@@ -1,7 +1,7 @@
 @media only screen and (min-width: 701px) {
   body .wrapper {
     width: 80%; }
-    body .wrapper .header-wrapper .header .topnav .menu-icon a {
+    body .wrapper .header-wrapper .header .header-topnav .topnav-icon a {
       display: none; }
   body .main-wrapper {
     width: 80%;
@@ -11,22 +11,27 @@
 @media only screen and (max-width: 700px) and (min-width: 320px) {
   .wrapper {
     width: 95%; }
-    .wrapper .topnav .menu-item {
+    .wrapper .header-topnav .topnav-item {
       display: none; }
+    .wrapper .header-topnav .topnav-icon {
+      position: absolute;
+      top: 14px;
+      right: 0; }
+      .wrapper .header-topnav .topnav-icon a {
+        text-decoration: none;
+        color: #313131; }
 
   .main-wrapper {
     width: 70%;
     margin: 0 auto; } }
 @media only screen and (max-width: 700px) and (min-width: 320px) {
-  .main-wrapper .header .responsive {
+  .wrapper .header .responsive {
     display: flex;
     flex-direction: column;
     align-content: center; }
-    .main-wrapper .header .responsive .menu-item {
+    .wrapper .header .responsive .topnav-item {
       display: block; }
-    .main-wrapper .header .responsive .menu-icon {
-      position: absolute;
-      top: 0;
-      right: 0; } }
+    .wrapper .header .responsive .topnav-icon a {
+      text-decoration: none; } }
 
 /*# sourceMappingURL=media.css.map */

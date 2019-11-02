@@ -1,11 +1,12 @@
+@import "variables.scss";
 @media only screen and (min-width: 701px) {
     body {
         .wrapper {
             width: 80%;
             .header-wrapper {
                 .header {
-                    .topnav {
-                        .menu-icon {
+                    .header-topnav {
+                        .topnav-icon {
                             a {
                                 display: none;
                             }
@@ -27,9 +28,18 @@
 @media only screen and (max-width: 700px) and (min-width: 320px) {
     .wrapper {
         width: 95%;
-        .topnav {
-            .menu-item {
+        .header-topnav {
+            .topnav-item {
                 display: none;
+            }
+            .topnav-icon {
+                position: absolute;
+                top: 14px;
+                right: 0;
+                a {
+                    text-decoration: none;
+                    color: $font-color;
+                }
             }
         }
     }
@@ -40,19 +50,22 @@
 }
 
 @media only screen and (max-width: 700px) and (min-width: 320px) {
-    .main-wrapper {
+    .wrapper {
         .header {
             .responsive {
                 display: flex;
                 flex-direction: column;
                 align-content: center;
-                .menu-item {
+                .topnav-item {
                     display: block;
                 }
-                .menu-icon {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
+                .topnav-icon {
+                    // position: absolute;
+                    // top: 0;
+                    // right: 0;
+                    a {
+                        text-decoration: none;
+                    }
                 }
             }
         }
