@@ -1,0 +1,24 @@
+@mixin wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+
+@mixin title {
+    font-weight: bolder;
+    color: $font-color;
+    font-size: 150%;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+@mixin subtitle {
+    color: $font-color;
+    letter-spacing: 3px;
+    margin: 15% 0 0 0;
+    font-size: 80%;
+    color: lighten( $font-color, 30%);
+}

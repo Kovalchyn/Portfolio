@@ -1,0 +1,158 @@
+@import "media.scss";
+@import "variables.scss";
+@import "mixin.scss";
+body {
+    font-family: $font-family;
+    // background-color: rgb(241, 243, 142);
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        // background-color: rgb(190, 118, 92);
+        // HEADER
+        .header-wrapper {
+            .header {
+                display: flex;
+                justify-content: space-between;
+                position: fixed;
+                width: 80%;
+                margin: 0 auto;
+                top: 0;
+                background-color: $bg-color;
+                .logo {
+                    // background-color: rgb(82, 209, 209);
+                    a {
+                        font-size: 80%;
+                        color: $font-color;
+                        display: inline-block;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        // font-weight: bold;
+                        // color: lighten( $font-color, 30%);
+                        font-size: 100%;
+                        letter-spacing: 4px;
+                        // text-align: center;
+                        // display: none;
+                    }
+                }
+                .topnav {
+                    list-style-type: none;
+                    overflow: hidden;
+                    display: flex;
+                    font-size: 80%;
+                    justify-content: flex-end;
+                    // flex-flow: row wrap;
+                    width: 100%;
+                    // background-color: rgb(119, 106, 236);
+                    li {
+                        a {
+                            display: inline-block;
+                            color: $font-color;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                            // transition: 1s;
+                            font-size: 17px;
+                        }
+                        a:hover {
+                            color: lighten( $font-color, 50%);
+                            transition: 0.3s;
+                        }
+                    }
+                    .menu-icon {}
+                }
+            }
+        } // HEADER
+        .main-wrapper {
+            width: 80%;
+            margin: 0 auto;
+            .main {
+                @include wrapper;
+                // background-color: rgb(144, 214, 187);
+                .img {
+                    background-image: url(../img/IMG_1730_LR2.jpg);
+                    box-sizing: border-box;
+                    width: 400px;
+                    height: 80vh;
+                    margin: 0;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 70%;
+                }
+                .img:hover {
+                    background-image: url(../img/IMG_1730_LR2_BW.jpg);
+                    transition: 2s;
+                }
+                .text {
+                    width: 400px;
+                    height: 30vh;
+                    width: 400px;
+                    margin: auto;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .title {
+                        @include title;
+                    }
+                    .subtitle {
+                        @include subtitle;
+                    }
+                }
+            }
+            .portfolio {
+                @include wrapper;
+                // background-color: rgb(238, 190, 175);
+                .text {
+                    // background-color: yellowgreen;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 350px;
+                    .title {
+                        @include title;
+                    }
+                    .subtitle {
+                        @include subtitle;
+                    }
+                }
+                .img-box {
+                    // background-color: grey;
+                    width: 500px;
+                    .portfolio-list {
+                        justify-content: flex-end;
+                        display: flex;
+                        flex-flow: row wrap;
+                        li {
+                            .element-item {
+                                width: 160px;
+                                margin: 1px 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            width: 100%;
+            height: 140px;
+            // background-color: aqua;
+            margin: auto;
+            font-size: 80%;
+            display: flex;
+            flex-direction: row wrap;
+            justify-content: space-between;
+            color: lighten( $font-color, 10%);
+            // background-color: rgb(222, 135, 203);
+            i {
+                font-size: 130%;
+                margin-left: 40px;
+            }
+            i:hover {
+                color: lighten( $font-color, 70%);
+                transition: 0.3s;
+            }
+        }
+    }
+}
