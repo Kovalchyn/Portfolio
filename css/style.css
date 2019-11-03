@@ -19,7 +19,8 @@
       right: 0; }
       .wrapper .header-topnav .topnav-icon a {
         text-decoration: none;
-        color: #313131; }
+        color: #313131;
+        cursor: pointer; }
 
   .main-wrapper {
     width: 70%;
@@ -80,7 +81,7 @@ body {
         flex-flow: row wrap;
         justify-content: space-between;
         width: 100%;
-        margin: 100px auto;
+        margin: 100px auto 150px auto;
         box-sizing: border-box; }
         body .wrapper .main-wrapper .main .main-img {
           background-image: url(../img/IMG_1730_LR2.jpg);
@@ -116,58 +117,58 @@ body {
             margin: 15% 0 0 0;
             font-size: 80%;
             color: #7e7e7e; }
-      body .wrapper .main-wrapper .main-gellery {
+      body .wrapper .main-wrapper .main-gallery {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         width: 100%;
-        margin: 100px auto;
+        margin: 100px auto 150px auto;
         box-sizing: border-box; }
-        body .wrapper .main-wrapper .main-gellery .main-text {
+        body .wrapper .main-wrapper .main-gallery .main-text {
           text-align: center;
           display: flex;
           flex-direction: column;
           justify-content: center;
           width: 350px; }
-          body .wrapper .main-wrapper .main-gellery .main-text .title {
+          body .wrapper .main-wrapper .main-gallery .main-text .title {
             font-weight: bolder;
             color: #313131;
             font-size: 150%;
             letter-spacing: 6px;
             text-align: center; }
-          body .wrapper .main-wrapper .main-gellery .main-text .subtitle {
+          body .wrapper .main-wrapper .main-gallery .main-text .subtitle {
             color: #313131;
             letter-spacing: 3px;
             margin: 15% 0 0 0;
             font-size: 80%;
             color: #7e7e7e; }
-        body .wrapper .main-wrapper .main-gellery .gellery-wrapper {
+        body .wrapper .main-wrapper .main-gallery .gallery-wrapper {
           width: 500px; }
-          body .wrapper .main-wrapper .main-gellery .gellery-wrapper .gellery-list {
+          body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list {
             justify-content: flex-end;
             display: flex;
             flex-flow: row wrap; }
-            body .wrapper .main-wrapper .main-gellery .gellery-wrapper .gellery-list li .gellery-list-item {
+            body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item {
               width: 160px;
               margin: 1px 2px;
               border-radius: 3px; }
-            body .wrapper .main-wrapper .main-gellery .gellery-wrapper .gellery-list li .gellery-list-item:hover {
-              transform: scale(1.025);
-              transition: 1.5s; }
-    body .wrapper .footer {
-      width: 100%;
-      height: 140px;
-      margin: auto;
-      font-size: 80%;
-      display: flex;
-      flex-direction: row wrap;
-      justify-content: space-between;
-      color: #4b4b4b; }
-      body .wrapper .footer i {
-        font-size: 130%;
-        margin-left: 40px; }
-      body .wrapper .footer i:hover {
-        color: #e4e4e4;
-        transition: 0.3s; }
+            body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item:hover {
+              transform: scale(2);
+              transition: 2s; }
+  body .footer {
+    width: 100%;
+    height: 140px;
+    margin: auto;
+    font-size: 80%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    color: #4b4b4b; }
+    body .footer i {
+      font-size: 130%;
+      margin-left: 40px; }
+    body .footer i:hover {
+      color: #e4e4e4;
+      transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,8 @@
       right: 0; }
       .wrapper .header-topnav .topnav-icon a {
         text-decoration: none;
-        color: #313131; }
+        color: #313131;
+        cursor: pointer; }
 
   .main-wrapper {
     width: 70%;

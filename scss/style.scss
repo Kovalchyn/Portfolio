@@ -102,7 +102,7 @@ body {
                     }
                 }
             }
-            .main-gellery {
+            .main-gallery {
                 @include wrapper;
                 // background-color: rgb(238, 190, 175);
                 .main-text {
@@ -119,22 +119,22 @@ body {
                         @include subtitle;
                     }
                 }
-                .gellery-wrapper {
+                .gallery-wrapper {
                     // background-color: grey;
                     width: 500px;
-                    .gellery-list {
+                    .gallery-list {
                         justify-content: flex-end;
                         display: flex;
                         flex-flow: row wrap;
                         li {
-                            .gellery-list-item {
+                            .gallery-list-item {
                                 width: 160px;
                                 margin: 1px 2px;
                                 border-radius: 3px;
                             }
-                            .gellery-list-item:hover {
-                                transform: scale(1.025);
-                                transition: 1.5s;
+                            .gallery-list-item:hover {
+                                transform: scale(2.00);
+                                transition: 2s;
                             }
                         }
                     }
@@ -142,25 +142,25 @@ body {
             }
         }
         // FOOTER
-        .footer {
-            width: 100%;
-            height: 140px;
-            // background-color: aqua;
-            margin: auto;
-            font-size: 80%;
-            display: flex;
-            flex-direction: row wrap;
-            justify-content: space-between;
-            color: lighten( $font-color, 10%);
-            // background-color: rgb(222, 135, 203);
-            i {
-                font-size: 130%;
-                margin-left: 40px;
-            }
-            i:hover {
-                color: lighten( $font-color, 70%);
-                transition: 0.3s;
-            }
+    }
+    .footer {
+        width: 100%;
+        height: 140px;
+        // background-color: aqua;
+        margin: auto;
+        font-size: 80%;
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-between;
+        color: lighten( $font-color, 10%);
+        // background-color: rgb(222, 135, 203);
+        i {
+            font-size: 130%;
+            margin-left: 40px;
+        }
+        i:hover {
+            color: lighten( $font-color, 70%);
+            transition: 0.3s;
         }
     }
 }
