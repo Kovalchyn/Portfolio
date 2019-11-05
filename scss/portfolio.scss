@@ -1,65 +1,106 @@
-.gallery {
-    display: grid;
-    grid-column-gap: 5px;
-    grid-row-gap: 3px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 1px;
-    width: 100%;
-    margin: 0 auto;
-    .gallery-item {
-        transition: grid-row-start 300ms linear;
-        transition: transform 300ms ease;
-        transition: all 0.5s ease;
-        cursor: pointer;
-        .content {
-            img {
-                max-width: 100%;
-                border-radius: 7px;
-                transition: all 1.5s ease;
-                // margin: 0 1px;
+.wrapper {
+    width: 97% !important;
+    .header {
+        width: 97% !important;
+    }
+    .main-wrapper {
+        width: 100% !important;
+        .gallery {
+            // display: grid;
+            // column-gap: 2px;
+            // row-gap: 1px;
+            // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            // grid-auto-rows: 1px;
+            // width: 100%;
+            // margin: 0 auto;
+            // // grid-template-columns: repeat(8, 1fr);
+            // // grid-template-rows: repeat(8, 5vw);
+            // .gallery-item {
+            //     transition: grid-row-start 300ms linear;
+            //     transition: transform 300ms ease;
+            //     transition: all 0.5s ease;
+            //     cursor: pointer;
+            //     .content {
+            //         img {
+            //             max-width: 100%;
+            //             border-radius: 7px;
+            //             transition: all 1.5s ease;
+            //             // margin: 0 1px;
+            //         }
+            //     }
+            // }
+            // .gallery-item:hover {
+            //     transform: scale(1.025);
+            // }
+            // .full {
+            //     position: fixed;
+            //     left: 0;
+            //     top: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     z-index: 1;
+            //     .content {
+            //         // background-color: rgba(0, 0, 0, 0.75) !important;
+            //         height: 100%;
+            //         width: 200%;
+            //         display: grid;
+            //         img {
+            //             left: 50%;
+            //             transform: translate3d(0, 0, 0);
+            //             animation: zoomin 1s ease;
+            //             max-width: 100%;
+            //             max-height: 100%;
+            //             margin: auto;
+            //         }
+            //     }
+            // }
+            margin: 0 auto;
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                .column {
+                    flex: 30%;
+                    max-width: 40%;
+                    padding: 0 2px;
+                    img {
+                        margin-top: 4px;
+                        vertical-align: middle;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
-    .gallery-item:hover {
-        transform: scale(1.025);
-    }
-    .full {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        .content {
-            // background-color: rgba(0, 0, 0, 0.75) !important;
-            height: 100%;
-            width: 100%;
-            display: grid;
-            img {
-                left: 50%;
-                transform: translate3d(0, 0, 0);
-                animation: zoomin 1s ease;
-                max-width: 100%;
-                max-height: 100%;
-                margin: auto;
-            }
-        }
+}
+
+@media screen and (max-width: 426px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
-// media queries
-@media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    }
-}
 
-@media (max-width: 400px) {
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    }
-}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
+// @media screen and (max-width: 600px) {
+//     .column {
+//         flex: 100%;
+//         max-width: 100%;
+//     }
+// }
+// // media queries
+// @media (max-width: 600px) {
+//     .gallery {
+//         grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+//     }
+// }
+// @media (max-width: 400px) {
+//     .gallery {
+//         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+//     }
+// }
 @keyframes zoomin {
     0% {
         max-width: 0%;
