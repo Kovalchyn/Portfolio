@@ -5,7 +5,7 @@ body {
     font-family: $font-family;
     // background-color: rgb(241, 243, 142);
     .wrapper {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         // background-color: rgb(190, 118, 92);
         // HEADER
@@ -14,7 +14,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 position: fixed;
-                width: 80%;
+                width: 90%;
                 margin: 0 auto;
                 top: 0;
                 background-color: $bg-color;
@@ -66,7 +66,7 @@ body {
         }
         // MAIN
         .main-wrapper {
-            width: 80%;
+            // width: 90%;
             margin: 0 auto;
             .main {
                 @include wrapper;
@@ -75,7 +75,7 @@ body {
                     background-image: url(../img/IMG_1730_LR2.jpg);
                     box-sizing: border-box;
                     border-radius: 4px;
-                    width: 400px;
+                    width: 500px;
                     height: 80vh;
                     margin: 0;
                     background-size: cover;
@@ -87,7 +87,7 @@ body {
                 //     transition: 2s;
                 // }
                 .main-text {
-                    width: 400px;
+                    width: 500px;
                     height: 30vh;
                     width: 400px;
                     margin: auto;
@@ -112,7 +112,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    width: 350px;
+                    width: 500px;
                     .title {
                         @include title;
                     }
@@ -151,8 +151,8 @@ body {
         // background-color: aqua;
         margin: auto;
         font-size: 80%;
-        display: flex;
-        flex-direction: row wrap;
+        // display: flex;
+        // flex-direction: row;
         justify-content: space-between;
         color: lighten( $font-color, 10%);
         // background-color: rgb(222, 135, 203);
@@ -161,7 +161,7 @@ body {
             color: $font-color;
             i {
                 font-size: 130%;
-                margin-left: 40px;
+                margin: 0 20px;
             }
             i:hover {
                 color: lighten( $font-color, 70%);

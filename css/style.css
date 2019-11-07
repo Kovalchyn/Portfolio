@@ -1,32 +1,42 @@
 @media only screen and (min-width: 701px) {
   body .wrapper {
-    width: 80%; }
+    width: 90%; }
     body .wrapper .header-wrapper .header .header-topnav .topnav-icon a {
       display: none; }
   body .main-wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
     body .main-wrapper .main {
       margin: 50px auto; }
       body .main-wrapper .main .gallery-list-item {
-        width: 160px; } }
+        width: 160px; }
+  body .footer {
+    display: flex;
+    flex-direction: row; } }
 @media only screen and (max-width: 700px) and (min-width: 320px) {
   .wrapper {
-    width: 95%; }
-    .wrapper .header-topnav .topnav-item {
-      display: none; }
-    .wrapper .header-topnav .topnav-icon {
-      position: absolute;
-      top: 14px;
-      cursor: pointer; }
-      .wrapper .header-topnav .topnav-icon a {
-        text-decoration: none;
-        color: #313131;
+    width: 80%; }
+    .wrapper .header {
+      height: 50px; }
+      .wrapper .header .header-topnav .topnav-item {
+        display: none; }
+      .wrapper .header .header-topnav .topnav-icon {
+        position: absolute;
+        top: 14px;
         cursor: pointer; }
+        .wrapper .header .header-topnav .topnav-icon a {
+          text-decoration: none;
+          color: #313131;
+          cursor: pointer; }
 
   .main-wrapper {
-    width: 70%;
-    margin: 0 auto; } }
+    width: 80%;
+    margin: 0 auto; }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 @media only screen and (max-width: 700px) and (min-width: 320px) {
   .wrapper .responsive-header {
     height: 100vh; }
@@ -46,13 +56,13 @@
 body {
   font-family: exo-two-light; }
   body .wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
     body .wrapper .header-wrapper .header {
       display: flex;
       justify-content: space-between;
       position: fixed;
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       top: 0;
       background-color: white;
@@ -88,7 +98,6 @@ body {
           color: #b1b1b1;
           transition: 0.3s; }
     body .wrapper .main-wrapper {
-      width: 80%;
       margin: 0 auto; }
       body .wrapper .main-wrapper .main {
         display: flex;
@@ -101,14 +110,14 @@ body {
           background-image: url(../img/IMG_1730_LR2.jpg);
           box-sizing: border-box;
           border-radius: 4px;
-          width: 400px;
+          width: 500px;
           height: 80vh;
           margin: 0;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: 50% 70%; }
         body .wrapper .main-wrapper .main .main-text {
-          width: 400px;
+          width: 500px;
           height: 30vh;
           width: 400px;
           margin: auto;
@@ -140,7 +149,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: 350px; }
+          width: 500px; }
           body .wrapper .main-wrapper .main-gallery .main-text .title {
             font-weight: bolder;
             color: #313131;
@@ -172,15 +181,13 @@ body {
     height: 140px;
     margin: auto;
     font-size: 80%;
-    display: flex;
-    flex-direction: row wrap;
     justify-content: space-between;
     color: #4b4b4b; }
     body .footer a {
       color: #313131; }
       body .footer a i {
         font-size: 130%;
-        margin-left: 40px; }
+        margin: 0 20px; }
       body .footer a i:hover {
         color: #e4e4e4;
         transition: 0.3s; }
