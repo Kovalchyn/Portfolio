@@ -1,7 +1,9 @@
 .wrapper {
-  width: 97% !important; }
+  width: 100% !important; }
   .wrapper .header {
-    width: 97% !important; }
+    width: 100% !important;
+    padding: 0 10%;
+    box-sizing: border-box; }
   .wrapper .main-wrapper {
     width: 100% !important; }
     .wrapper .main-wrapper .gallery {
@@ -18,6 +20,9 @@
             margin-top: 4px;
             vertical-align: middle;
             width: 100%; }
+          .wrapper .main-wrapper .gallery .row .column img:hover {
+            transform: scale(1.05);
+            transition: 2s; }
 
 @media screen and (max-width: 426px) {
   .column {

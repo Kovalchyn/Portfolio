@@ -18,6 +18,7 @@ body {
                 margin: 0 auto;
                 top: 0;
                 background-color: $bg-color;
+                z-index: 1000;
                 .header-logo {
                     // background-color: rgb(82, 209, 209);
                     a {
@@ -81,10 +82,10 @@ body {
                     background-repeat: no-repeat;
                     background-position: 50% 70%;
                 }
-                .main-img:hover {
-                    background-image: url(../img/IMG_1730_LR2_BW.jpg);
-                    transition: 2s;
-                }
+                // .main-img:hover {
+                //     transform: scale(1.0);
+                //     transition: 2s;
+                // }
                 .main-text {
                     width: 400px;
                     height: 30vh;
@@ -133,7 +134,7 @@ body {
                                 border-radius: 3px;
                             }
                             .gallery-list-item:hover {
-                                transform: scale(2.00);
+                                transform: scale(1.50);
                                 transition: 2s;
                             }
                         }
@@ -154,13 +155,17 @@ body {
         justify-content: space-between;
         color: lighten( $font-color, 10%);
         // background-color: rgb(222, 135, 203);
-        i {
-            font-size: 130%;
-            margin-left: 40px;
-        }
-        i:hover {
-            color: lighten( $font-color, 70%);
-            transition: 0.3s;
+        a {
+            // text-decoration: none;
+            color: $font-color;
+            i {
+                font-size: 130%;
+                margin-left: 40px;
+            }
+            i:hover {
+                color: lighten( $font-color, 70%);
+                transition: 0.3s;
+            }
         }
     }
 }

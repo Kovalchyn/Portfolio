@@ -16,7 +16,7 @@
     .wrapper .header-topnav .topnav-icon {
       position: absolute;
       top: 14px;
-      right: 0; }
+      cursor: pointer; }
       .wrapper .header-topnav .topnav-icon a {
         text-decoration: none;
         color: #313131;
@@ -29,9 +29,11 @@
   .wrapper .header .responsive {
     display: flex;
     flex-direction: column;
-    align-content: center; }
+    align-items: flex-end;
+    height: 40vh; }
     .wrapper .header .responsive .topnav-item {
-      display: block; }
+      display: block;
+      margin-top: 0; }
     .wrapper .header .responsive .topnav-icon a {
       text-decoration: none; } }
 

@@ -1,7 +1,9 @@
 .wrapper {
-    width: 97% !important;
+    width: 100% !important;
     .header {
-        width: 97% !important;
+        width: 100% !important;
+        padding: 0 10%;
+        box-sizing: border-box;
     }
     .main-wrapper {
         width: 100% !important;
@@ -67,6 +69,10 @@
                         margin-top: 4px;
                         vertical-align: middle;
                         width: 100%;
+                    }
+                    img:hover {
+                        transform: scale(1.05);
+                        transition: 2s;
                     }
                 }
             }

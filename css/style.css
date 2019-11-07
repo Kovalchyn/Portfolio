@@ -16,7 +16,7 @@
     .wrapper .header-topnav .topnav-icon {
       position: absolute;
       top: 14px;
-      right: 0; }
+      cursor: pointer; }
       .wrapper .header-topnav .topnav-icon a {
         text-decoration: none;
         color: #313131;
@@ -29,9 +29,11 @@
   .wrapper .header .responsive {
     display: flex;
     flex-direction: column;
-    align-content: center; }
+    align-items: flex-end;
+    height: 40vh; }
     .wrapper .header .responsive .topnav-item {
-      display: block; }
+      display: block;
+      margin-top: 0; }
     .wrapper .header .responsive .topnav-icon a {
       text-decoration: none; } }
 body {
@@ -46,7 +48,8 @@ body {
       width: 80%;
       margin: 0 auto;
       top: 0;
-      background-color: white; }
+      background-color: white;
+      z-index: 1000; }
       body .wrapper .header-wrapper .header .header-logo a {
         font-size: 80%;
         color: #313131;
@@ -93,9 +96,6 @@ body {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: 50% 70%; }
-        body .wrapper .main-wrapper .main .main-img:hover {
-          background-image: url(../img/IMG_1730_LR2_BW.jpg);
-          transition: 2s; }
         body .wrapper .main-wrapper .main .main-text {
           width: 400px;
           height: 30vh;
@@ -153,7 +153,7 @@ body {
               margin: 1px 2px;
               border-radius: 3px; }
             body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item:hover {
-              transform: scale(2);
+              transform: scale(1.5);
               transition: 2s; }
   body .footer {
     width: 100%;
@@ -164,11 +164,13 @@ body {
     flex-direction: row wrap;
     justify-content: space-between;
     color: #4b4b4b; }
-    body .footer i {
-      font-size: 130%;
-      margin-left: 40px; }
-    body .footer i:hover {
-      color: #e4e4e4;
-      transition: 0.3s; }
+    body .footer a {
+      color: #313131; }
+      body .footer a i {
+        font-size: 130%;
+        margin-left: 40px; }
+      body .footer a i:hover {
+        color: #e4e4e4;
+        transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */

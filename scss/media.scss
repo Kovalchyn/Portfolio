@@ -35,7 +35,7 @@
             .topnav-icon {
                 position: absolute;
                 top: 14px;
-                right: 0;
+                cursor: pointer;
                 a {
                     text-decoration: none;
                     color: $font-color;
@@ -56,14 +56,13 @@
             .responsive {
                 display: flex;
                 flex-direction: column;
-                align-content: center;
+                align-items: flex-end;
+                height: 40vh;
                 .topnav-item {
                     display: block;
+                    margin-top: 0;
                 }
                 .topnav-icon {
-                    // position: absolute;
-                    // top: 0;
-                    // right: 0;
                     a {
                         text-decoration: none;
                     }
