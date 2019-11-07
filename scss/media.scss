@@ -20,6 +20,9 @@
             margin: 0 auto;
             .main {
                 margin: 50px auto;
+                .gallery-list-item {
+                    width: 160px;
+                }
             }
         }
     }
@@ -52,20 +55,31 @@
 
 @media only screen and (max-width: 700px) and (min-width: 320px) {
     .wrapper {
-        .header {
+        .responsive-header {
+            height: 100vh;
             .responsive {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-end;
-                height: 40vh;
+                align-items: flex-start;
+                // margin: 0 auto;
                 .topnav-item {
                     display: block;
-                    margin-top: 0;
+                    margin: auto;
                 }
                 .topnav-icon {
+                    top: 14px;
+                    right: 0px;
                     a {
                         text-decoration: none;
+                        margin: 0;
                     }
+                }
+            }
+        }
+        .main {
+            .main-gallery {
+                .gallery-list-item {
+                    // width: 200px;
                 }
             }
         }
