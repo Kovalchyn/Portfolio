@@ -8,30 +8,34 @@
     letter-spacing: 2px;
     position: absolute;
     left: 0px; }
-.wrapper .main-wrapper .gallery {
+.wrapper .main-wrapper {
+  width: 100% !important;
   margin: 0 auto; }
-  .wrapper .main-wrapper .gallery .row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%; }
-    .wrapper .main-wrapper .gallery .row .column {
-      padding: 0 2px; }
-      .wrapper .main-wrapper .gallery .row .column img {
-        margin-top: 4px;
-        vertical-align: middle;
-        width: 100%; }
-      .wrapper .main-wrapper .gallery .row .column img:hover {
-        transform: scale(1.05);
-        transition: 2s; }
+  .wrapper .main-wrapper .gallery {
+    margin: 0 auto; }
+    .wrapper .main-wrapper .gallery .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      .wrapper .main-wrapper .gallery .row .column {
+        padding: 0 2px; }
+        .wrapper .main-wrapper .gallery .row .column img {
+          margin-top: 4px;
+          vertical-align: middle; }
+        .wrapper .main-wrapper .gallery .row .column img:hover {
+          transform: scale(1.05);
+          transition: 2s; }
 
 @media only screen and (min-width: 701px) {
   .column {
-    flex: 30%;
-    max-width: 40%; } }
+    flex: 30%; }
+    .column img {
+      width: 100%; } }
 @media only screen and (max-width: 700px) and (min-width: 320px) {
   .column {
-    flex: 90%;
-    max-width: 40%; } }
+    flex: 50%; }
+    .column img {
+      width: 100%; } }
 @keyframes zoomin {
   0% {
     max-width: 0%; }

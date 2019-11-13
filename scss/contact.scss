@@ -1,20 +1,27 @@
 @import "variables.scss";
 @import "mixin.scss";
 .wrapper {
+    color: $font-color;
     .main-wrapper {
         .main {
             height: 70vh;
             padding: 50px 0 0 0;
             .container-text {
                 width: 400px;
-                background-color: yellow;
+                line-height: 25px;
+                // background-color: yellow;
                 p {
-                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+                p:nth-of-type(2n) {
+                    margin-top: 20px;
+                    color: lighten( $font-color, 50%);
+                    font-family: $font-family;
                 }
             }
             .container-form {
                 width: 550px;
-                background-color: pink;
+                // background-color: pink;
                 .contact-form {
                     text-align: center;
                     width: 100%;
@@ -22,11 +29,13 @@
                     .form-input-name {
                         .form-control {
                             @include form-input;
+                            font-family: $font-family;
                         }
                     }
                     .form-input-email {
                         .form-control {
                             @include form-input;
+                            font-family: $font-family;
                         }
                     }
                     .form-input-message {
@@ -35,7 +44,8 @@
                             border-bottom: 0.7px solid $font-color;
                             width: 80%;
                             resize: none;
-                            height: 180px;
+                            font-family: $font-family;
+                            height: 100px;
                             font-size: 100%;
                         }
                     }

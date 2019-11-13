@@ -1,8 +1,10 @@
 @import "media.scss";
 @import "variables.scss";
 @import "mixin.scss";
+@import "loading.scss";
 body {
     font-family: $font-family;
+    background-color: $bg-color;
     .wrapper {
         width: 80%;
         margin: 0 auto;
@@ -60,12 +62,12 @@ body {
         }
         // MAIN
         .main-wrapper {
-            // width: 90%;
+            // width: 80%;
             margin: 0 auto;
             .main {
                 @include wrapper;
                 .main-img {
-                    background-image: url(../img/IMG_1730_LR2.jpg);
+                    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg);
                     box-sizing: border-box;
                     border-radius: 4px;
                     width: 500px;
@@ -145,6 +147,10 @@ body {
             color: lighten( $font-color, 10%);
             box-sizing: border-box;
             padding-bottom: 30px;
+            div:hover {
+                color: lighten( $font-color, 70%);
+                transition: 0.3s;
+            }
             a {
                 color: $font-color;
                 i {

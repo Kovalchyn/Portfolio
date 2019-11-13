@@ -53,8 +53,40 @@
         .wrapper .responsive-header .responsive .topnav-icon a {
           text-decoration: none;
           margin: 0; } }
+/*smoothly loading*/
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
 body {
-  font-family: "Titillium Web", sans-serif; }
+  -webkit-animation: fade-in 1s linear;
+  /* Safari 4+ */
+  -moz-animation: fade-in 1s linear;
+  /* Fx 5+ */
+  -o-animation: fade-in 1s linear;
+  /* Opera 12+ */
+  animation: fade-in 1s linear;
+  /* IE 10+, Fx 29+ */ }
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: white; }
   body .wrapper {
     width: 80%;
     margin: 0 auto; }
@@ -106,7 +138,7 @@ body {
         margin: 100px auto 150px auto;
         box-sizing: border-box; }
         body .wrapper .main-wrapper .main .main-img {
-          background-image: url(../img/IMG_1730_LR2.jpg);
+          background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg);
           box-sizing: border-box;
           border-radius: 4px;
           width: 500px;
@@ -186,6 +218,9 @@ body {
       color: #4b4b4b;
       box-sizing: border-box;
       padding-bottom: 30px; }
+      body .footer-wrapper .footer div:hover {
+        color: #e4e4e4;
+        transition: 0.3s; }
       body .footer-wrapper .footer a {
         color: #313131; }
         body .footer-wrapper .footer a i {
