@@ -9,6 +9,7 @@ body {
         width: 80%;
         margin: 0 auto;
         .header-wrapper {
+            width: 100%;
             .header {
                 display: flex;
                 justify-content: space-between;
@@ -150,6 +151,7 @@ body {
             div:hover {
                 color: lighten( $font-color, 70%);
                 transition: 0.3s;
+                margin-bottom: 5px;
             }
             a {
                 color: $font-color;

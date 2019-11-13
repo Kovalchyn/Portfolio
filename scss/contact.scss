@@ -1,52 +1,70 @@
 @import "variables.scss";
 @import "mixin.scss";
-.wrapper {
+body {
     color: $font-color;
-    .main-wrapper {
-        .main {
-            height: 70vh;
-            padding: 50px 0 0 0;
-            .container-text {
-                width: 400px;
-                line-height: 25px;
-                // background-color: yellow;
-                p {
-                    margin-top: 10px;
-                }
-                p:nth-of-type(2n) {
-                    margin-top: 20px;
-                    color: lighten( $font-color, 50%);
-                    font-family: $font-family;
-                }
-            }
-            .container-form {
-                width: 550px;
-                // background-color: pink;
-                .contact-form {
-                    text-align: center;
-                    width: 100%;
-                    height: 100%;
-                    .form-input-name {
-                        .form-control {
-                            @include form-input;
-                            font-family: $font-family;
-                        }
+    font-family: $font-family;
+    .wrapper {
+        .main-wrapper {
+            .main {
+                height: 70vh;
+                padding: 50px 0 0 0;
+                .container-text {
+                    width: 400px;
+                    line-height: 25px;
+                    // background-color: yellow;
+                    p {
+                        margin-top: 10px;
                     }
-                    .form-input-email {
-                        .form-control {
-                            @include form-input;
-                            font-family: $font-family;
-                        }
+                    p:nth-of-type(2n) {
+                        margin-top: 20px;
+                        color: lighten( $font-color, 50%);
+                        font-family: $font-family;
                     }
-                    .form-input-message {
-                        .form-control {
+                }
+                .container-form {
+                    width: 550px;
+                    // background-color: pink;
+                    .contact-form {
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+                        .form-input-name {
+                            .form-control {
+                                @include form-input;
+                                font-family: $font-family;
+                            }
+                        }
+                        .form-input-email {
+                            .form-control {
+                                @include form-input;
+                                font-family: $font-family;
+                            }
+                        }
+                        .form-input-message {
+                            .form-control {
+                                border: none;
+                                border-bottom: 0.7px solid $font-color;
+                                width: 80%;
+                                resize: none;
+                                font-family: $font-family;
+                                height: 100px;
+                                font-size: 100%;
+                            }
+                        }
+                        .btn {
+                            background-color: $font-color;
+                            width: 150px;
+                            height: 10%;
+                            color: lighten( $font-color, 70%);
                             border: none;
-                            border-bottom: 0.7px solid $font-color;
-                            width: 80%;
-                            resize: none;
-                            font-family: $font-family;
-                            height: 100px;
+                            border-radius: 3px;
                             font-size: 100%;
+                            margin: 5% 0 0 0;
+                        }
+                        .btn:hover {
+                            color: $font-color;
+                            background-color: lighten( $font-color, 70%);
+                            transition: 2s;
                         }
                     }
                 }
