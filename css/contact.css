@@ -1,0 +1,40 @@
+.wrapper .main-wrapper .main {
+  height: 70vh;
+  padding: 50px 0 0 0; }
+  .wrapper .main-wrapper .main .container-text {
+    width: 400px;
+    background-color: yellow; }
+    .wrapper .main-wrapper .main .container-text p {
+      margin-bottom: 20px; }
+  .wrapper .main-wrapper .main .container-form {
+    width: 550px;
+    background-color: pink; }
+    .wrapper .main-wrapper .main .container-form .contact-form {
+      text-align: center;
+      width: 100%;
+      height: 100%; }
+      .wrapper .main-wrapper .main .container-form .contact-form .form-input-name .form-control {
+        border: none;
+        border-bottom: 0.7px solid #313131;
+        width: 80%;
+        font-size: 100%;
+        margin: 2%;
+        height: 70px;
+        color: #313131; }
+      .wrapper .main-wrapper .main .container-form .contact-form .form-input-email .form-control {
+        border: none;
+        border-bottom: 0.7px solid #313131;
+        width: 80%;
+        font-size: 100%;
+        margin: 2%;
+        height: 70px;
+        color: #313131; }
+      .wrapper .main-wrapper .main .container-form .contact-form .form-input-message .form-control {
+        border: none;
+        border-bottom: 0.7px solid #313131;
+        width: 80%;
+        resize: none;
+        height: 180px;
+        font-size: 100%; }
+
+/*# sourceMappingURL=contact.css.map */

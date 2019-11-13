@@ -22,3 +22,13 @@
     font-size: 80%;
     color: lighten( $font-color, 30%);
 }
+
+@mixin form-input {
+    border: none;
+    border-bottom: 0.7px solid $font-color;
+    width: 80%;
+    font-size: 100%;
+    margin: 2%;
+    height: 70px;
+    color: $font-color;
+}

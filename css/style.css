@@ -54,15 +54,15 @@
           text-decoration: none;
           margin: 0; } }
 body {
-  font-family: exo-two-light; }
+  font-family: "Titillium Web", sans-serif; }
   body .wrapper {
-    width: 90%;
+    width: 80%;
     margin: 0 auto; }
     body .wrapper .header-wrapper .header {
       display: flex;
       justify-content: space-between;
       position: fixed;
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
       top: 0;
       background-color: white;
@@ -77,11 +77,10 @@ body {
         body .wrapper .header-wrapper .header .header-topnav .header-logo a {
           color: #313131;
           display: inline-block;
-          text-align: center;
           padding: 14px 16px;
           text-decoration: none;
           font-size: 100%;
-          letter-spacing: 4px;
+          letter-spacing: 2px;
           position: absolute;
           left: 0px; }
         body .wrapper .header-wrapper .header .header-topnav .header-logo a:hover {
@@ -149,7 +148,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: 500px; }
+          width: 400px; }
           body .wrapper .main-wrapper .main-gallery .main-text .title {
             font-weight: bolder;
             color: #313131;
@@ -174,22 +173,26 @@ body {
               margin: 1px 2px;
               border-radius: 3px; }
             body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item:hover {
-              transform: scale(1.5);
+              transform: scale(1.3);
               transition: 2s; }
-  body .footer {
+  body .footer-wrapper {
     width: 100%;
-    height: 140px;
-    margin: auto;
-    font-size: 80%;
-    justify-content: space-between;
-    color: #4b4b4b; }
-    body .footer a {
-      color: #313131; }
-      body .footer a i {
-        font-size: 130%;
-        margin: 0 20px; }
-      body .footer a i:hover {
-        color: #e4e4e4;
-        transition: 0.3s; }
+    height: 140px; }
+    body .footer-wrapper .footer {
+      width: 80%;
+      margin: auto;
+      font-size: 80%;
+      justify-content: space-between;
+      color: #4b4b4b;
+      box-sizing: border-box;
+      padding-bottom: 30px; }
+      body .footer-wrapper .footer a {
+        color: #313131; }
+        body .footer-wrapper .footer a i {
+          font-size: 130%;
+          margin: 0 20px; }
+        body .footer-wrapper .footer a i:hover {
+          color: #e4e4e4;
+          transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
