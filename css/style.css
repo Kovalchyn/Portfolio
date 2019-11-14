@@ -8,8 +8,6 @@
     margin: 0 auto; }
     body .main-wrapper .main {
       margin: 50px auto; }
-      body .main-wrapper .main .gallery-list-item {
-        width: 160px; }
   body .footer {
     display: flex;
     flex-direction: row; } }
@@ -37,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; } }
-@media only screen and (max-width: 700px) and (min-width: 320px) {
+@media only screen and (max-width: 700px) and (min-width: 320px) and (max-width: 700px) and (min-width: 320px) {
   .wrapper .responsive-header {
     height: 100vh; }
     .wrapper .responsive-header .responsive {
@@ -85,8 +83,9 @@ body {
   /* IE 10+, Fx 29+ */ }
 
 body {
-  font-family: "Titillium Web", sans-serif;
-  background-color: white; }
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: white;
+  width: 100%; }
   body .wrapper {
     width: 80%;
     margin: 0 auto; }
@@ -138,7 +137,8 @@ body {
         justify-content: space-between;
         width: 100%;
         margin: 100px auto 150px auto;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        width: 98%; }
         body .wrapper .main-wrapper .main .main-img {
           background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg);
           box-sizing: border-box;
@@ -182,7 +182,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          width: 400px; }
+          width: 300px; }
           body .wrapper .main-wrapper .main-gallery .main-text .title {
             font-weight: bolder;
             color: #313131;
@@ -196,14 +196,14 @@ body {
             font-size: 80%;
             color: #7e7e7e; }
         body .wrapper .main-wrapper .main-gallery .gallery-wrapper {
-          width: 500px;
+          width: 600px;
           margin-top: 50px; }
           body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list {
             justify-content: center;
             display: flex;
             flex-flow: row wrap; }
             body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item {
-              width: 160px;
+              width: 195px;
               margin: 1px 2px;
               border-radius: 3px; }
             body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item:hover {
@@ -220,10 +220,11 @@ body {
       color: #4b4b4b;
       box-sizing: border-box;
       padding-bottom: 30px; }
+      body .footer-wrapper .footer div {
+        margin-bottom: 20px; }
       body .footer-wrapper .footer div:hover {
         color: #e4e4e4;
-        transition: 0.3s;
-        margin-bottom: 5px; }
+        transition: 0.3s; }
       body .footer-wrapper .footer a {
         color: #313131; }
         body .footer-wrapper .footer a i {

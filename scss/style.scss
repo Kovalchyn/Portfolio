@@ -5,6 +5,7 @@
 body {
     font-family: $font-family;
     background-color: $bg-color;
+    width: 100%;
     .wrapper {
         width: 80%;
         margin: 0 auto;
@@ -67,6 +68,7 @@ body {
             margin: 0 auto;
             .main {
                 @include wrapper;
+                width: 98%;
                 .main-img {
                     background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg);
                     box-sizing: border-box;
@@ -106,7 +108,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    width: 400px;
+                    width: 300px;
                     .title {
                         @include title;
                     }
@@ -115,7 +117,7 @@ body {
                     }
                 }
                 .gallery-wrapper {
-                    width: 500px;
+                    width: 600px;
                     margin-top: 50px;
                     .gallery-list {
                         justify-content: center;
@@ -123,7 +125,7 @@ body {
                         flex-flow: row wrap;
                         li {
                             .gallery-list-item {
-                                width: 160px;
+                                width: 195px;
                                 margin: 1px 2px;
                                 border-radius: 3px;
                             }
@@ -148,10 +150,12 @@ body {
             color: lighten( $font-color, 10%);
             box-sizing: border-box;
             padding-bottom: 30px;
+            div {
+                margin-bottom: 20px;
+            }
             div:hover {
                 color: lighten( $font-color, 70%);
                 transition: 0.3s;
-                margin-bottom: 5px;
             }
             a {
                 color: $font-color;
