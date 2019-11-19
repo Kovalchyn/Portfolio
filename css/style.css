@@ -41,16 +41,17 @@
     .wrapper .responsive-header .responsive {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
+      height: 55vh; }
       .wrapper .responsive-header .responsive .topnav-item {
         display: block;
         margin: auto; }
+      .wrapper .responsive-header .responsive .topnav-item:nth-child(2) {
+        margin-top: 100px; }
       .wrapper .responsive-header .responsive .topnav-icon {
         top: 14px;
         right: 0px; }
         .wrapper .responsive-header .responsive .topnav-icon a {
-          text-decoration: none;
-          margin: 0; } }
+          text-decoration: none; } }
 /*smoothly loading*/
 @-webkit-keyframes fade-in {
   0% {
@@ -82,6 +83,57 @@ body {
   animation: fade-in 1s linear;
   /* IE 10+, Fx 29+ */ }
 
+.wrapper .main-wrapper {
+  width: 100% !important;
+  margin: 0 auto; }
+  .wrapper .main-wrapper .gallery {
+    margin: 0 auto; }
+    .wrapper .main-wrapper .gallery .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      .wrapper .main-wrapper .gallery .row .column {
+        padding: 0 2px; }
+        .wrapper .main-wrapper .gallery .row .column img {
+          margin-top: 4px;
+          vertical-align: middle; }
+        .wrapper .main-wrapper .gallery .row .column img:hover {
+          transform: scale(1.05);
+          transition: 2s; }
+
+@media only screen and (min-width: 701px) {
+  .column {
+    flex: 30%; }
+    .column img {
+      width: 100%; } }
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+  .column {
+    flex: 50%; }
+    .column img {
+      width: 100%; } }
+@keyframes zoomin {
+  0% {
+    max-width: 0%; }
+  10% {
+    max-width: 10%; }
+  20% {
+    max-width: 20%; }
+  30% {
+    max-width: 30%; }
+  40% {
+    max-width: 40%; }
+  50% {
+    max-width: 50%; }
+  60% {
+    max-width: 60%; }
+  70% {
+    max-width: 70%; }
+  80% {
+    max-width: 80%; }
+  90% {
+    max-width: 90%; }
+  100% {
+    max-width: 100%; } }
 body {
   font-family: "Open Sans Condensed", sans-serif;
   background-color: white;
@@ -122,7 +174,6 @@ body {
           body .wrapper .header-wrapper .header .header-topnav .topnav-item a {
             display: inline-block;
             color: #313131;
-            text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px; }

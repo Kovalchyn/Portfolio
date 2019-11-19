@@ -2,11 +2,12 @@ body {
   color: #313131;
   font-family: "Open Sans Condensed", sans-serif; }
   body .wrapper .main-wrapper .main {
-    height: 70vh;
-    padding: 50px 0 0 0; }
+    padding: 50px 0 0 0;
+    margin-bottom: 200px; }
     body .wrapper .main-wrapper .main .container-text {
       width: 400px;
-      line-height: 25px; }
+      line-height: 25px;
+      margin-bottom: 70px; }
       body .wrapper .main-wrapper .main .container-text p {
         margin-top: 10px; }
       body .wrapper .main-wrapper .main .container-text p:nth-of-type(2n) {
@@ -14,7 +15,7 @@ body {
         color: #b1b1b1;
         font-family: "Open Sans Condensed", sans-serif; }
     body .wrapper .main-wrapper .main .container-form {
-      width: 550px; }
+      width: 500px; }
       body .wrapper .main-wrapper .main .container-form .contact-form {
         text-align: center;
         width: 100%;
@@ -61,5 +62,12 @@ body {
           color: #313131;
           background-color: #e4e4e4;
           transition: 2s; }
+
+@media only screen and (min-width: 701px) {
+  .text {
+    text-align: left; } }
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+  .text {
+    text-align: center; } }
 
 /*# sourceMappingURL=contact.css.map */

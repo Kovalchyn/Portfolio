@@ -1,13 +1,3 @@
-.wrapper .header .header-logo {
-  margin-top: 14px; }
-  .wrapper .header .header-logo a {
-    color: #313131;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 100%;
-    letter-spacing: 2px;
-    position: absolute;
-    left: 0px; }
 .wrapper .main-wrapper {
   width: 100% !important;
   margin: 0 auto; }

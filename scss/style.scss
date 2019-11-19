@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "mixin.scss";
 @import "loading.scss";
+@import "portfolio.scss";
 body {
     font-family: $font-family;
     background-color: $bg-color;
@@ -47,7 +48,7 @@ body {
                         a {
                             display: inline-block;
                             color: $font-color;
-                            text-align: center;
+                            // text-align: center;
                             padding: 14px 16px;
                             text-decoration: none;
                             // transition: 1s;

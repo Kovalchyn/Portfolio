@@ -6,11 +6,13 @@ body {
     .wrapper {
         .main-wrapper {
             .main {
-                height: 70vh;
+                // height: 70vh;
                 padding: 50px 0 0 0;
+                margin-bottom: 200px;
                 .container-text {
                     width: 400px;
                     line-height: 25px;
+                    margin-bottom: 70px;
                     // background-color: yellow;
                     p {
                         margin-top: 10px;
@@ -22,7 +24,7 @@ body {
                     }
                 }
                 .container-form {
-                    width: 550px;
+                    width: 500px;
                     // background-color: pink;
                     .contact-form {
                         text-align: center;
@@ -71,5 +73,17 @@ body {
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .text {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+    .text {
+        text-align: center;
     }
 }

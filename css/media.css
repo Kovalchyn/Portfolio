@@ -41,15 +41,16 @@
     .wrapper .responsive-header .responsive {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
+      height: 55vh; }
       .wrapper .responsive-header .responsive .topnav-item {
         display: block;
         margin: auto; }
+      .wrapper .responsive-header .responsive .topnav-item:nth-child(2) {
+        margin-top: 100px; }
       .wrapper .responsive-header .responsive .topnav-icon {
         top: 14px;
         right: 0px; }
         .wrapper .responsive-header .responsive .topnav-icon a {
-          text-decoration: none;
-          margin: 0; } }
+          text-decoration: none; } }
 
 /*# sourceMappingURL=media.css.map */
