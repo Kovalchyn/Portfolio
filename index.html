@@ -6,50 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>D.Mitich</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+    <style>
+        /*!
+         * chiefSlider (https://itchief.ru/lessons/php/feedback-form-for-website)
+         * Copyright 2018 Alexander Maltsev
+         * Licensed under MIT (https://github.com/itchief/feedback-form/blob/master/LICENSE)
+         */
+        /* body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #fff;
+            height: 100vh;
+        } */
+        
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slider__wrapper {
+            display: flex;
+            transition: transform 0.6s ease;
+            /* height: 100vh; */
+        }
+        
+        .slider__item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        
+        .slider__control {
+            position: absolute;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            color: #fff;
+            text-align: center;
+            opacity: 0.5;
+            height: 50px;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, .5);
+        }
+        
+        .slider__control:hover,
+        .slider__control:focus {
+            color: #fff;
+            text-decoration: none;
+            outline: 0;
+            opacity: .9;
+        }
+        
+        .slider__control_left {
+            left: 0;
+        }
+        
+        .slider__control_right {
+            right: 0;
+        }
+        
+        .slider__control::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: transparent no-repeat center center;
+            background-size: 100% 100%;
+        }
+        
+        .slider__control_left::before {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        
+        .slider__control_right::before {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+        
+        .slider__item>div {
+            line-height: 100vh;
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header-wrapper">
-            <div class="header" id="headerId">
-                <ul class="header-topnav" id="topnavId">
-                    <li class="header-logo"><a href="index.html">D.MITICH</a></li>
-                    <li class="topnav-item"><a href="index.html" class="active">HOME</a></li>
-                    <li class="topnav-item"><a href="portfolio.html">PORTFOLIO</a></li>
-                    <li class="topnav-item"><a href="contact.html">CONTACT</a></li>
-                    <li class="topnav-icon"><a href="javascript:void(0)" onclick="menuActive()">&#9776</a></li>
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__item">
+                <div style="background: orange; ">Діма!</div>
+            </div>
+            <div class="slider__item ">
+                <div style="background: green; ">Дай</div>
+            </div>
+            <div class="slider__item ">
+                <div style="background: violet; ">мені</div>
+            </div>
+            <div class="slider__item ">
+                <div style="background: coral; ">цьом!</div>
+            </div>
+        </div>
+        <a class="slider__control slider__control_left " href="# " role="button "></a>
+        <a class="slider__control slider__control_right slider__control_show " href="# " role="button "></a>
+    </div>
+
+
+    <div class="wrapper ">
+        <header class="header-wrapper ">
+            <div class="header " id="headerId " data-aos="fade-up " data-aos-duration="1000 ">
+                <ul class="header-topnav " id="topnavId ">
+                    <li class="header-logo "><a href="index.html ">D.MITICH</a></li>
+                    <li class="topnav-item "><a href="index.html " class="active ">HOME</a></li>
+                    <li class="topnav-item "><a href="portfolio.html ">PORTFOLIO</a></li>
+                    <li class="topnav-item "><a href="contact.html ">CONTACT</a></li>
+                    <li class="topnav-icon "><a href="javascript:void(0) " onclick="menuActive() ">&#9776</a></li>
                 </ul>
             </div>
         </header>
 
-        <main class="main-wrapper">
-            <div class="main">
-                <div class="main-img"></div>
-                <div class="main-text">
-                    <p class="title">Dima Mitich</p>
-                    <p class="subtitle">Lorem ipsum dolor sit amen</p>
+
+
+
+
+        <main class="main-wrapper ">
+            <div class="main ">
+                <div class="main-img " data-aos="fade-up " data-aos-duration="1000 "></div>
+                <div class="main-text " data-aos="fade-up " data-aos-duration="1000 ">
+                    <p class="title ">Dima Mitich</p>
+                    <p class="subtitle ">Lorem ipsum dolor sit amen</p>
                 </div>
             </div>
 
-            <div class="main-gallery">
-                <div class="main-text">
-                    <p class="title">Portfolio</p>
-                    <p class="subtitle">Сlick on the picture to see more</p>
+            <div class="main-gallery " data-aos="fade-up " data-aos-duration="1000 ">
+                <div class="main-text ">
+                    <p class="title ">Portfolio</p>
+                    <p class="subtitle ">Сlick on the picture to see more</p>
                 </div>
 
-                <div class="gallery-wrapper">
-                    <ul class="gallery-list">
-                        <li><img class="gallery-list-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef278985800835.5d86cffb7c965.jpg"></li>
-                        <li><img class="gallery-list-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg"></li>
-                        <li><img class="gallery-list-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f7bae485800835.5d86cffb81037.jpg"></li>
-                        <li><img class="gallery-list-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef278985800835.5d86cffb7c965.jpg"></li>
-                        <li><img class="gallery-list-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/0350f385800835.5d86cffb8c921.jpg"></li>
-                        <li><img class="gallery-list-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef278985800835.5d86cffb7c965.jpg"></li>
+                <div class="gallery-wrapper ">
+                    <ul class="gallery-list ">
+                        <li><img class="gallery-list-item " src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef278985800835.5d86cffb7c965.jpg "></li>
+                        <li><img class="gallery-list-item " src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg "></li>
+                        <li><img class="gallery-list-item " src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f7bae485800835.5d86cffb81037.jpg "></li>
+                        <li><img class="gallery-list-item " src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef278985800835.5d86cffb7c965.jpg "></li>
+                        <li><img class="gallery-list-item " src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/0350f385800835.5d86cffb8c921.jpg "></li>
+                        <li><img class="gallery-list-item " src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/ef278985800835.5d86cffb7c965.jpg "></li>
 
                     </ul>
                 </div>
@@ -59,27 +169,31 @@
 
 
 
-        <footer class="footer-wrapper">
-            <div class="footer">
-                <div class="footer-contact-item">dimamitich1@gmail.com</div>
-                <div class="footer-contact-item">
-                    <a href="https://instagram.com/dimamitich?igshid=3v3bqxmhornn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.pinterest.ca/"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="https://www.facebook.com/D.Mitich/photos/pcb.2556652524563870/2556651854563937/?type=3&theater"><i class="fab fa-facebook-f"></i></a>
+        <footer class="footer-wrapper ">
+            <div class="footer " data-aos="fade-up " data-aos-duration="1000 ">
+                <div class="footer-contact-item ">
+                    <a>+38 067 392 85 58</a>
+                    <a>dimamitich1@gmail.com</a>
                 </div>
-                <div class="footer-contact-item">Kyiv, Ukraine</div>
-                <div class="footer-contact-item">+38 (063) 818 13 76</div>
-                <!-- <div class="footer-contact-item">
-                    <a href="#headerId" id="toTop"><i class="fas fa-chevron-up"></i></a>
+
+
+                <!-- <div class="footer-contact-item ">dimamitich1@gmail.com</div> -->
+                <div class="footer-contact-item ">
+                    <a href="https://instagram.com/dimamitich?igshid=3v3bqxmhornn "><i class="fab fa-instagram "></i></a>
+                    <a href="https://www.facebook.com/D.Mitich/photos/pcb.2556652524563870/2556651854563937/?type=3&theater "><i class="fab fa-facebook-f "></i></a>
+                </div>
+
+                <!-- <div class="footer-contact-item ">
+                    <a href="#headerId " id="toTop "><i class="fas fa-chevron-up "></i></a>
                 </div> -->
             </div>
 
         </footer>
     </div>
 
-
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="js/main.js "></script>
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js "></script>
 </body>
 
 </html>
