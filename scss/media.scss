@@ -1,19 +1,19 @@
 @import "variables.scss";
 @media only screen and (min-width: 701px) {
     body {
-        .wrapper {
-            width: 90%;
-            .header-wrapper {
-                .header {
-                    .header-topnav {
-                        .topnav-icon {
-                            a {
-                                display: none;
-                            }
+        .header-wrapper {
+            .header {
+                .header-topnav {
+                    .topnav-icon {
+                        a {
+                            display: none;
                         }
                     }
                 }
             }
+        }
+        .wrapper {
+            width: 90%;
         }
         .main-wrapper {
             width: 90%;
@@ -30,26 +30,26 @@
 }
 
 @media only screen and (max-width: 700px) and (min-width: 320px) {
-    .wrapper {
-        width: 80%;
-        .header {
-            height: 50px;
-            .header-topnav {
-                .topnav-item {
-                    display: none;
-                }
-                .topnav-icon {
-                    position: absolute;
-                    top: 14px;
+    .header {
+        height: 50px;
+        .header-topnav {
+            .topnav-item {
+                display: none;
+            }
+            .topnav-icon {
+                position: absolute;
+                top: 14px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: $font-color;
                     cursor: pointer;
-                    a {
-                        text-decoration: none;
-                        color: $font-color;
-                        cursor: pointer;
-                    }
                 }
             }
         }
+    }
+    .wrapper {
+        width: 80%;
     }
     .main-wrapper {
         width: 80%;
@@ -61,32 +61,32 @@
         align-items: center;
     }
     @media only screen and (max-width: 700px) and (min-width: 320px) {
-        .wrapper {
-            .responsive-header {
-                height: 100vh;
-                .responsive {
-                    display: flex;
-                    flex-direction: column;
-                    height: 55vh;
-                    // align-items: flex-start;
-                    // margin: 20px auto;
-                    .topnav-item {
-                        display: block;
-                        margin: auto;
-                    }
-                    .topnav-item:nth-child(2) {
-                        margin-top: 100px;
-                    }
-                    .topnav-icon {
-                        top: 14px;
-                        right: 0px;
-                        a {
-                            text-decoration: none;
-                            // margin: 0;
-                        }
+        .responsive-header {
+            height: 100vh;
+            .responsive {
+                display: flex;
+                flex-direction: column;
+                height: 55vh;
+                // align-items: flex-start;
+                // margin: 20px auto;
+                .topnav-item {
+                    display: block;
+                    margin: auto;
+                }
+                .topnav-item:nth-child(2) {
+                    margin-top: 100px;
+                }
+                .topnav-icon {
+                    top: 14px;
+                    right: 0px;
+                    a {
+                        text-decoration: none;
+                        // margin: 0;
                     }
                 }
             }
+        }
+        .wrapper {
             .main {
                 .main-gallery {
                     .gallery-list-item {
