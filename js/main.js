@@ -20,7 +20,7 @@ var multiItemSlider = (function() {
             _config = {
                 isCycling: false, // автоматична зміна слайдів ???але без нього не працює
                 direction: 'right', // напрямок зміни слайдів
-                interval: 2000, // інтервал між автоматичною зміною слайда
+                interval: 4000, // інтервал між автоматичною зміною слайда
                 pause: false // встановлення паузи при наведенні курсора на слайд
             };
 
@@ -166,7 +166,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) { slideIndex = 1 }
     x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 4000); // Change image every 2 seconds
 }
 
 

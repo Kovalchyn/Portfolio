@@ -183,7 +183,7 @@ body {
     overflow: hidden; }
   body .slider__wrapper {
     display: flex;
-    transition: transform 0.6s ease;
+    transition: transform 1s ease;
     /* height: 100vh; */ }
   body .slider__item {
     flex: 0 0 100%;
@@ -200,8 +200,7 @@ body {
     text-align: center;
     opacity: 0.5;
     height: 50px;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5); }
+    transform: translateY(-50%); }
   body .slider__control:hover,
   body .slider__control:focus {
     color: #fff;
