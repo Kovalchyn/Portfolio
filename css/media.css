@@ -2,9 +2,8 @@
   body .header-wrapper .header .header-topnav .topnav-icon a {
     display: none; }
   body .wrapper {
-    width: 90%; }
+    width: 80%; }
   body .main-wrapper {
-    width: 90%;
     margin: 0 auto; }
     body .main-wrapper .main {
       margin: 50px auto; }
@@ -25,11 +24,7 @@
         color: #313131;
         cursor: pointer; }
 
-  .wrapper {
-    width: 80%; }
-
   .main-wrapper {
-    width: 80%;
     margin: 0 auto; }
 
   .footer {

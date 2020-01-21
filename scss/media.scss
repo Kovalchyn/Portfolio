@@ -13,13 +13,16 @@
             }
         }
         .wrapper {
-            width: 90%;
+            width: 80%;
         }
         .main-wrapper {
-            width: 90%;
+            // width: 90%;
             margin: 0 auto;
             .main {
                 margin: 50px auto;
+                .gallery-wrapper {
+                    // width: 700px;
+                }
             }
         }
         .footer {
@@ -48,12 +51,12 @@
             }
         }
     }
-    .wrapper {
-        width: 80%;
-    }
     .main-wrapper {
-        width: 80%;
+        // width: 80%;
         margin: 0 auto;
+        .gallery-wrapper {
+            // width: 600px;
+        }
     }
     .footer {
         display: flex;
