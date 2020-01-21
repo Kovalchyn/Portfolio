@@ -18,6 +18,7 @@
     .header .header-topnav .topnav-icon {
       position: absolute;
       top: 14px;
+      right: 16px;
       cursor: pointer; }
       .header .header-topnav .topnav-icon a {
         text-decoration: none;
@@ -45,8 +46,10 @@
         margin-top: 100px; }
       .responsive-header .responsive .topnav-icon {
         top: 14px;
-        right: 0px; }
+        right: 16px; }
         .responsive-header .responsive .topnav-icon a {
-          text-decoration: none; } }
+          text-decoration: none;
+          color: #b1b1b1;
+          transition: 0.3s; } }
 
 /*# sourceMappingURL=media.css.map */

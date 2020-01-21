@@ -31,12 +31,12 @@ body {
                     a {
                         color: $font-color;
                         display: inline-block;
-                        padding: 14px 16px;
+                        top: 14px;
+                        left: 16px;
                         text-decoration: none;
                         font-size: 100%;
                         letter-spacing: 2px;
                         position: absolute;
-                        left: 0px;
                     }
                     a:hover {
                         color: lighten( $font-color, 50%);
@@ -137,7 +137,7 @@ body {
                 @include wrapper;
                 width: 98%;
                 .main-img {
-                    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/fefe5c85800835.5d86cffb7cf95.jpg);
+                    background-image: url(https://fs16.fex.net/preview/2646339702/0x0);
                     box-sizing: border-box;
                     border-radius: 4px;
                     width: 500px;
@@ -205,6 +205,14 @@ body {
                             .gallery-list-item:hover {
                                 opacity: 0.5;
                                 transition: 0.3s;
+                            }
+                            p {
+                                color: $font-color;
+                                letter-spacing: 3px;
+                                margin: 3% 0 20% 0;
+                                font-size: 80%;
+                                color: lighten( $font-color, 30%);
+                                text-align: center;
                             }
                         }
                     }
