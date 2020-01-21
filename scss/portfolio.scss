@@ -1,22 +1,8 @@
 @import "variables.scss";
 .wrapper {
-    // width: 100% !important;
     .header {
-        // width: 100% !important;
-        // padding: 0 10%;
-        // box-sizing: border-box;
         .header-logo {
-            // margin-top: 14px;
-            a {
-                // color: $font-color;
-                // display: inline-block;
-                // padding: 14px 16px;
-                // text-decoration: none;
-                // font-size: 100%;
-                // letter-spacing: 2px;
-                // position: absolute;
-                // left: 0px;
-            }
+            a {}
         }
     }
     .main-wrapper {
@@ -29,16 +15,13 @@
                 flex-wrap: wrap;
                 width: 100%;
                 .column {
-                    // flex: 30%;
-                    // max-width: 40%;
                     padding: 0 2px;
                     img {
                         margin-top: 4px;
                         vertical-align: middle;
-                        // width: 100%;
                     }
                     img:hover {
-                        transform: scale(0.9);
+                        transform: scale(0.97);
                         transition: 0.3s;
                         opacity: 0.5;
                     }
@@ -51,7 +34,6 @@
 @media only screen and (min-width: 701px) {
     .column {
         flex: 30%;
-        // max-width: 40%;
         img {
             width: 100%
         }
@@ -70,46 +52,35 @@
 @keyframes zoomin {
     0% {
         max-width: 0%;
-        // transition: 4s;
     }
     10% {
         max-width: 10%;
-        // transition: 4s;
     }
     20% {
         max-width: 20%;
-        // transition: 4s;
     }
     30% {
         max-width: 30%;
-        // transition: 4s;
     }
     40% {
         max-width: 40%;
-        // transition: 4s;
     }
     50% {
         max-width: 50%;
-        // transition: 4s;
     }
     60% {
         max-width: 60%;
-        // transition: 4s;
     }
     70% {
         max-width: 70%;
-        // transition: 4s;
     }
     80% {
         max-width: 80%;
-        // transition: 4s;
     }
     90% {
         max-width: 90%;
-        // transition: 4s;
     }
     100% {
         max-width: 100%;
-        // transition: 4s;
     }
 }

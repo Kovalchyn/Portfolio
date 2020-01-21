@@ -97,7 +97,7 @@ body {
           margin-top: 4px;
           vertical-align: middle; }
         .wrapper .main-wrapper .gallery .row .column img:hover {
-          transform: scale(0.9);
+          transform: scale(0.97);
           transition: 0.3s;
           opacity: 0.5; }
 
@@ -314,36 +314,46 @@ body {
             body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .gallery-list-item:hover {
               opacity: 0.5;
               transition: 0.3s; }
-            body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li p {
+            body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .title {
+              font-weight: bolder;
+              color: #313131;
+              font-size: 100%;
+              letter-spacing: 6px;
+              text-align: center; }
+            body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list li .title:hover {
+              color: #b1b1b1;
+              transition: 0.3s; }
+            body .wrapper .main-wrapper .main-gallery .gallery-wrapper .gallery-list .subtitle {
               color: #313131;
               letter-spacing: 3px;
               margin: 3% 0 20% 0;
               font-size: 80%;
               color: #7e7e7e;
               text-align: center; }
-  body .footer-wrapper {
-    width: 100%;
-    height: 100px; }
-    body .footer-wrapper .footer {
-      width: 80%;
-      margin: auto;
-      font-size: 80%;
-      justify-content: space-between;
-      color: #b1b1b1;
-      box-sizing: border-box;
-      padding-bottom: 30px; }
-      body .footer-wrapper .footer div {
-        margin-bottom: 20px; }
-      body .footer-wrapper .footer div:hover {
+
+.footer-wrapper {
+  width: 100%;
+  height: 100px; }
+  .footer-wrapper .footer {
+    width: 80%;
+    margin: auto;
+    font-size: 80%;
+    justify-content: space-between;
+    color: #b1b1b1;
+    box-sizing: border-box;
+    padding-bottom: 30px; }
+    .footer-wrapper .footer div {
+      margin-bottom: 20px; }
+    .footer-wrapper .footer div:hover {
+      color: #e4e4e4;
+      transition: 0.3s; }
+    .footer-wrapper .footer a {
+      color: #979797; }
+      .footer-wrapper .footer a i {
+        font-size: 130%;
+        margin: 0 20px; }
+      .footer-wrapper .footer a i:hover {
         color: #e4e4e4;
         transition: 0.3s; }
-      body .footer-wrapper .footer a {
-        color: #979797; }
-        body .footer-wrapper .footer a i {
-          font-size: 130%;
-          margin: 0 20px; }
-        body .footer-wrapper .footer a i:hover {
-          color: #e4e4e4;
-          transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
