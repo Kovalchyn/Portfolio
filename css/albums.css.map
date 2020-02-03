@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAK;EACD,KAAK,ECHI,OAAe;EDIxB,WAAW,ECFD,uBACJ;EDEN,aAAS;IACL,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,MAAM;IACd,2BAAc;MACV,MAAM,EAAE,MAAM",
+"sources": ["../scss/albums.scss","../scss/variables.scss"],
+"names": [],
+"file": "albums.css"
+}

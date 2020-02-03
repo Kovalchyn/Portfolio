@@ -1,0 +1,18 @@
+@import "variables.scss";
+@import "mixin.scss";
+body {
+    color: $font-color;
+    font-family: $font-family;
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        .main-wrapper {
+            margin: 0 auto;
+            .main-gallery {
+                .gallery-wrapper {
+                    .gallery-list {}
+                }
+            }
+        }
+    }
+}

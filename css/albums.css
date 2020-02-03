@@ -1,0 +1,10 @@
+body {
+  color: #313131;
+  font-family: "Open Sans", sans-serif; }
+  body .wrapper {
+    width: 80%;
+    margin: 0 auto; }
+    body .wrapper .main-wrapper {
+      margin: 0 auto; }
+
+/*# sourceMappingURL=albums.css.map */
