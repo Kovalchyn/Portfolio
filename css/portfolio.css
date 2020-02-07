@@ -8,14 +8,12 @@
       flex-wrap: wrap;
       width: 100%; }
       .wrapper .main-wrapper .gallery .row .column {
-        padding: 0 2px; }
+        padding: 0 3px; }
         .wrapper .main-wrapper .gallery .row .column img {
-          margin-top: 4px;
+          margin-top: 6px;
           vertical-align: middle; }
         .wrapper .main-wrapper .gallery .row .column img:hover {
-          transform: scale(0.97);
-          transition: 0.3s;
-          opacity: 0.5; }
+          transition: 0.3s; }
 
 @media only screen and (min-width: 701px) {
   .column {

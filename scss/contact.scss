@@ -55,19 +55,12 @@ body {
                             }
                         }
                         .btn {
-                            background-color: $font-color;
-                            width: 150px;
-                            height: 10%;
-                            color: lighten( $font-color, 70%);
-                            border: none;
-                            border-radius: 3px;
-                            font-size: 100%;
-                            margin: 5% 0 0 0;
+                            @include btn;
                         }
                         .btn:hover {
-                            color: $font-color;
-                            background-color: lighten( $font-color, 70%);
-                            transition: 2s;
+                            color: $bg-color;
+                            background-color: black;
+                            transition: 0.3s;
                         }
                     }
                 }

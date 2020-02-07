@@ -15,15 +15,16 @@
                 flex-wrap: wrap;
                 width: 100%;
                 .column {
-                    padding: 0 2px;
+                    padding: 0 3px;
                     img {
-                        margin-top: 4px;
+                        margin-top: 6px;
+                        // width: 150%;
                         vertical-align: middle;
                     }
                     img:hover {
-                        transform: scale(0.97);
+                        // transform: scale(1.097);
                         transition: 0.3s;
-                        opacity: 0.5;
+                        // opacity: 0.5;
                     }
                 }
             }

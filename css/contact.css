@@ -50,18 +50,18 @@ body {
           font-size: 100%;
           outline: none; }
         body .wrapper .main-wrapper .main .container-form .contact-form .btn {
-          background-color: #313131;
+          display: block;
+          background-color: white;
           width: 150px;
           height: 10%;
-          color: #e4e4e4;
-          border: none;
-          border-radius: 3px;
-          font-size: 100%;
-          margin: 5% 0 0 0; }
-        body .wrapper .main-wrapper .main .container-form .contact-form .btn:hover {
           color: #313131;
-          background-color: #e4e4e4;
-          transition: 2s; }
+          border: 1px #313131 solid;
+          font-size: 100%;
+          margin: 5% auto; }
+        body .wrapper .main-wrapper .main .container-form .contact-form .btn:hover {
+          color: white;
+          background-color: black;
+          transition: 0.3s; }
 
 @media only screen and (min-width: 701px) {
   .text {

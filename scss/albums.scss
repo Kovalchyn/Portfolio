@@ -1,18 +1,69 @@
 @import "variables.scss";
 @import "mixin.scss";
-body {
-    color: $font-color;
-    font-family: $font-family;
-    .wrapper {
-        width: 80%;
-        margin: 0 auto;
-        .main-wrapper {
+@media only screen and (min-width: 701px) {
+    body {
+        color: $font-color;
+        font-family: $font-family;
+        .wrapper {
+            width: 80%;
             margin: 0 auto;
-            .main-gallery {
-                .gallery-wrapper {
-                    .gallery-list {}
+            .main-wrapper {
+                margin: 150px auto;
+                .main-portfolio {
+                    .portfolio-wrapper {
+                        .portfolio-list {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 100px;
+                            li {
+                                .portfolio-list-item {
+                                    width: 285px;
+                                    margin: 0 50px 0px 50px;
+                                }
+                                .portfolio-list-item:hover {
+                                    opacity: 0.5;
+                                    transition: 0.3s;
+                                }
+                                .title {
+                                    @include title;
+                                    // margin-top: 10px;
+                                }
+                                .subtitle {
+                                    @include subtitle;
+                                    text-align: center;
+                                    margin-top: 0;
+                                }
+                                .text {
+                                    @include subtitle;
+                                    color: $font-color !important;
+                                    font-size: 90%;
+                                    width: 70%;
+                                    margin: 10% auto;
+                                    text-align: center;
+                                }
+                                .btn {
+                                    @include btn;
+                                }
+                                .btn:hover {
+                                    color: $bg-color;
+                                    background-color: black;
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+        .portfolio-list-item {
+            width: 300px;
         }
     }
 }
