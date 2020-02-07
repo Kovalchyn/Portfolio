@@ -63,7 +63,36 @@
         display: flex;
         flex-direction: column;
         .portfolio-list-item {
-            width: 300px;
+            width: 285px;
+        }
+        .portfolio-list-item:hover {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+        .title {
+            @include title;
+            // margin-top: 10px;
+        }
+        .subtitle {
+            @include subtitle;
+            text-align: center;
+            margin-top: 0;
+        }
+        .text {
+            @include subtitle;
+            color: $font-color !important;
+            font-size: 90%;
+            width: 70%;
+            margin: 10% auto;
+            text-align: center;
+        }
+        .btn {
+            @include btn;
+        }
+        .btn:hover {
+            color: $bg-color;
+            background-color: black;
+            transition: 0.3s;
         }
     }
 }
