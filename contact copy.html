@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D.Mitich</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <div class="header" id="headerId">
+            <ul class="header-topnav" id="topnavId">
+                <li class="header-logo"><a href="index.html">D.MITICH</a></li>
+                <li class="topnav-item"><a href="index.html" class="active">HOME</a></li>
+                <li class="topnav-item"><a href="albums.html">PORTFOLIO</a></li>
+                <li class="topnav-item"><a href="contact.html">CONTACT</a></li>
+                <li class="topnav-icon"><a href="javascript:void(0)" onclick="menuActive()">&#9776</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="wrapper">
+
+        <main class="main-wrapper">
+            <div class="main">
+                <div class="container-text" data-aos="fade-up">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="email">E-MAIL</p>
+                        <p>dimamitich1@gmail.com</p>
+                        <p class="phone">PHONE</p>
+                        <p>+38 (067) 392 85 58</p>
+                    </div>
+                </div>
+
+                <div class="container-form" data-aos="fade-up">
+                    <form action="send.php" method="POST" class="contact-form">
+                        <!-- <div class="title">Contact with us</div>
+                        <div class="subtitle">Duis aute irure dolor in reprehenderit </div> -->
+                        <div class="form-input-name">
+                            <input type="text" id="contact-name" name="contact-name" class="form-control" placeholder="Your name" required/>
+                        </div>
+                        <div class="form-input-email">
+                            <input type="email" id="contact-email" name="contact-email" class="form-control" placeholder="E-mail" required/>
+                        </div>
+                        <div class="form-input-message">
+                            <textarea id="contact-message" name="contact-message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Submit</button>
+
+                    </form>
+
+
+
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer-wrapper">
+            <div class="footer">
+                <div class="footer-contact-item">dimamitich1@gmail.com</div>
+                <div class="footer-contact-item">
+                    <a href="https://instagram.com/dimamitich?igshid=3v3bqxmhornn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/D.Mitich/photos/pcb.2556652524563870/2556651854563937/?type=3&theater"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="footer-contact-item">Kyiv, Ukraine</div>
+                <div class="footer-contact-item">+38 (063) 818 13 76</div>
+                <!-- <div class="footer-contact-item">
+                    <a href="#headerId" id="toTop"><i class="fas fa-chevron-up"></i></a>
+                </div> -->
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</body>
+</body>
+
+</html>
